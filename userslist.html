@@ -1,0 +1,26 @@
+<table border="1">
+<tr>
+    <th></th>
+    <th> user </th>
+    <th>password</th>
+    <th>email</th>
+    <th>user type</th>
+    <th>gender</th>
+    <th>delete</th>
+</tr>
+<tr ng-repeat="user in userListArr track by $index| myfilter:customFilter" >
+    <td>{{$index}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.password}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.usertype}}</td>
+    <td>{{user.gender}}</td>
+    <td><button ng-click="delete($index)">delete</button></td>
+</tr>
+<tr>
+<td colspan="5"><input type="text"  placeholder="Enter Your usersname to filter" ng-model="customFilter"/>
+</td>
+</tr>
+
+
+</table>

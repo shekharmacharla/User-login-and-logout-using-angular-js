@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>AngularJs</title>
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="appLevel">
+
+        <div ng-if="!status">
+            <a href="#/login">login</a>
+            
+        </div>
+        <div ng-if="status">
+                <a href="#/home">home</a>
+                <a href="#/users">users</a>
+                <a href="#/userslist">userslist</a>
+                <a href="#/logout">logout</a>
+
+        </div>
+        <div ng-view=""></div>
+
+    </div>
+    
+</body>
+</html>

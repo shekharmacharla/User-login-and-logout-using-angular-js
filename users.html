@@ -1,0 +1,18 @@
+
+<div>Please Enter your details !!!</div>
+
+<form>
+
+    <input ng-model='user.username'type="text" placeholder="username"/><br>
+    <input ng-model='user.password' type="password" placeholder="password"/><br>
+    <input ng-model='user.email' type="email" placeholder="email"/><br>
+    <select ng-model='user.usertype'><br>
+        <option value="admin"> Admin</option>
+        <option value="Manager">Manager</option>
+        <option value="consultant">consultant</option>
+    </select><br>
+    <label >Gender</label>
+    <input ng-model='user.gender' type="radio" value="Male"/>Male
+    <input ng-model='user.gender' type="radio" value="female"/>female<br>
+<button ng-click="submit()">submit</button>
+</form>
